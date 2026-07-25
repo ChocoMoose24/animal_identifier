@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ANIMAL CLASSIFIER !!!! — Anya Dash</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+</head>
+<body>
+  <header class="banner">
+    <div class="banner-inner">
+      <h1>ANIMAL CLASSIFIER !!!!</h1>
+      <p class="byline">by Anya Dash</p>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <section class="panel panel-upload" aria-labelledby="upload-heading">
+      <h2 id="upload-heading" class="visually-hidden">Upload image</h2>
+
+      <label class="upload-btn" for="image-input">
+        Upload image
+      </label>
+      <input
+        id="image-input"
+        type="file"
+        accept="image/*"
+        hidden
+      />
+      <p class="upload-hint">Take a photo or choose one from your gallery (converted to JPG)</p>
+
+      <div class="preview-frame" id="preview-frame">
+        <img id="preview-image" alt="Uploaded animal preview" hidden />
+        <p class="preview-placeholder" id="preview-placeholder">
+          Your image will appear here
+        </p>
+      </div>
+
+      <p class="status" id="status" role="status" aria-live="polite">Loading model…</p>
+    </section>
+
+    <section class="panel panel-results" aria-labelledby="results-heading">
+      <h2 id="results-heading">Top 3 detections</h2>
+      <ol class="predictions" id="predictions">
+        <li class="prediction empty">
+          <span class="prediction-label">Waiting for an image</span>
+          <span class="prediction-score">—</span>
+        </li>
+        <li class="prediction empty">
+          <span class="prediction-label">—</span>
+          <span class="prediction-score">—</span>
+        </li>
+        <li class="prediction empty">
+          <span class="prediction-label">—</span>
+          <span class="prediction-score">—</span>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
