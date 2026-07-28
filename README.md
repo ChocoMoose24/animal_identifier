@@ -44,7 +44,7 @@ When I first uploaded the base model, we froze each layer, meaning that I made s
 
 It works by uploading an image after you wait for the model to load, then the model will predict what animal the image is. You can see the top 3 predictions on the right side.
 <img src="blob:chrome-untrusted://media-app/e7e64fbb-079a-4c88-ac97-810c9212b086" alt="Screenshot 2026-07-28 2.21.35 PM.png"/><img width="1488" height="1008" alt="image" src="https://github.com/user-attachments/assets/c739a077-8d1a-4531-ae7d-77f328f59440" />
-<img src="blob:chrome-untrusted://media-app/e7e64fbb-079a-4c88-ac97-810c9212b086" alt="Screenshot 2026-07-28 2.21.35 PM.png"/><img width="1488" height="1008" alt="image" src="https://github.com/user-attachments/assets/20179f6b-9aa3-442d-9cba-f7a883a61cf1" />
+<img src="blob:chrome-untrusted://media-app/64999211-44b5-46b2-9638-b668a53b9ec7" alt="Image_20260727_124329_373.webp"/><img width="2285" height="1368" alt="image" src="https://github.com/user-attachments/assets/19bd5a1b-7728-497e-bd0a-ca1e9e418b9c" />
 
 Also, the model constantly mistakes my dog for a rhinoceros.
 
