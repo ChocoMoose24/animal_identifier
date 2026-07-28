@@ -36,13 +36,27 @@ When I first uploaded the base model, we froze each layer, meaning that I made s
 # Our new loss chart (Yes, I ran for more epochs.)
 <img src="blob:chrome-untrusted://media-app/22b53570-d475-4d74-ba6f-5d5ca10966e2" alt="Screenshot 2026-07-27 1.23.50 PM.png"/><img width="683" height="512" alt="image" src="https://github.com/user-attachments/assets/29291d12-fe85-4cf8-8672-b31009082332" />
 
+# Application
+## Layout
+- Banner: **Animal Image Classification** / by Anya Dash
+- Left: upload button (camera or gallery on mobile) + image preview
+- Right: top 3 class predictions with probabilities
+
+It works by uploading an image after you wait for the model to load, then the model will predict what animal the image is. You can see the top 3 predictions on the right side.
+<img src="blob:chrome-untrusted://media-app/e7e64fbb-079a-4c88-ac97-810c9212b086" alt="Screenshot 2026-07-28 2.21.35 PM.png"/><img width="1488" height="1008" alt="image" src="https://github.com/user-attachments/assets/c739a077-8d1a-4531-ae7d-77f328f59440" />
+<img src="blob:chrome-untrusted://media-app/e7e64fbb-079a-4c88-ac97-810c9212b086" alt="Screenshot 2026-07-28 2.21.35 PM.png"/><img width="1488" height="1008" alt="image" src="https://github.com/user-attachments/assets/20179f6b-9aa3-442d-9cba-f7a883a61cf1" />
+
+Also, the model constantly mistakes my dog for a rhinoceros.
+
+<img src="blob:chrome-untrusted://media-app/ae34b690-4ae0-4d24-833b-4aa5810196e5" alt="Image_20260727_124329_414.webp"/><img width="2178" height="1273" alt="image" src="https://github.com/user-attachments/assets/80aba131-efa9-4588-9995-3e9f1c5e376b" />
+
+<img src="blob:chrome-untrusted://media-app/18e03c67-cfc6-4408-86f5-c9c6fd6b620a" alt="Image_20260727_124329_077.webp"/><img width="2324" height="1374" alt="image" src="https://github.com/user-attachments/assets/01b2375e-44c8-4113-84e4-5d65fee5119c" />
+
+
+
+
 
 
 Static web app for animal image classification with TensorFlow.js.
 Designed to host on **GitHub Pages**.
 
-## Layout
-
-- Banner: **Animal Image Classification** / by Anya Dash
-- Left: upload button (camera or gallery on mobile) + image preview
-- Right: top 3 class predictions with probabilities
