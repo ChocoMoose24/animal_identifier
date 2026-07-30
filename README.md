@@ -1,31 +1,31 @@
-## Animal Image Classification — Anya Dash
+# Animal Image Classification — Anya Dash
 
 
-# What this project is
+## What this project is
 
 This is a CNN (Convolutional Neural Network) that has been trained off of the Animal-Image-Dataset(90 animals) on Kaggle. You can upload a photo to the website and the computer will output 3 of the highest probabilities for 3 animals and the highest one is your predicted animal.
 
-# How it works
+## How it works
 
 First, it converts the image to a 3D tensor (H x W x 3 channels ((For RGB values.)))
 It does this because each image is not yellow, purple, or orange. They are instead 3 grids stacked on top of each other: A red grid, blue grid, and yellow grid. Each pixel in the grid has a value of 0-255 showing how strong the color is at that specific pixel.
 
-# Filters
+## Filters
 Small matrices such as 3 x 3 grids ( Called Kernels or Filters) will slide across the map to calculate activation values. It extracts features such as edges, lines and textures. Kernels/ filters will spot basic things like that.
 This now leads us into something called hierarchical feature extraction
 
-# feature maps
+## feature maps
 A feature map is the output grid of a filter. Feature maps may detect the absence or presence of specific features in the image. High values indicate the specific feature is there, while a lower value indicates that its absence.
 
-# hierarchical feature extraction
+## hierarchical feature extraction
 The lower layers of a feature map detect things such as lines and edges. The higher layers will detect more complex things, such as part of objects or objects.
 
 We also use Global Average Pooling so that we get the mean of each color, somewhat like a score for each channel (The different grids.) This way rather than an entire grid, you have a singular number. Plus, now there is no need to add any flatten layers.
 
-# Base model
+## Base model
 The model uses a base model called MobileV2, trained off of more than 1.4 million images. This is heavily useful because training a model from scratch takes a lot of time and still isn't that accurate. MobileV2 definitely improved its time and accuracy, but the accuracy and loss got really weird at the end. So, to fix this we did something called fine tuning.
 
-# fine tuning
+## fine tuning
 When I first uploaded the base model, we froze each layer, meaning that I made sure the base model was untrainable. But, this built a wall for how far the accuracy could actually go. So, I figured out how many of the layers were the lower level feature maps (18) because I don't want to waste time retraining the line and edge detector, due to the fact they are found in every image so the detector would already be good. So, we froze those layers and started training only the part of objects and object detectors for a more accurate model. This is called fine-tuning.
 
 # Loss chart
