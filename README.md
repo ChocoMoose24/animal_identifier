@@ -1,12 +1,9 @@
-# Animal Image Classification — Anya Dash
+## Animal Image Classification — Anya Dash
 
-According to scientists, animals are multicellular organisms belonging to the kingdom Animalia. They eat organic material, breathe oxygen, are capable of movement, reproduce sexually, and undergo a specific developmental stage, known as the blastula, during embryonic growth.
-
-Source: Elephango
 
 # What this project is
 
-This is a CNN (Convolutional Neural Network) that has been trained off of the Animal-Image-Dataset(90 animals) on Kaggle.
+This is a CNN (Convolutional Neural Network) that has been trained off of the Animal-Image-Dataset(90 animals) on Kaggle. You can upload a photo to the website and the computer will output 3 of the highest probabilities for 3 animals and the highest one is your predicted animal.
 
 # How it works
 
