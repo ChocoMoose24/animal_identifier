@@ -4,6 +4,8 @@
 ## What this project is
 
 This is a CNN (Convolutional Neural Network) that has been trained off of the Animal-Image-Dataset(90 animals) on Kaggle. You can upload a photo to the website and the computer will output 3 of the highest probabilities for 3 animals and the highest one is your predicted animal.
+<img src="blob:chrome-untrusted://media-app/9c5a2644-774e-4b1f-af8e-5a613ad556ca" alt="Screenshot 2026-07-30 1.37.38 PM.png"/><img width="1025" height="515" alt="image" src="https://github.com/user-attachments/assets/2ec99c12-9fed-4862-8494-24aaa6f9c436" />
+
 
 ## How it works
 
