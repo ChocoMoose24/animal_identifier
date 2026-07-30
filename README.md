@@ -27,14 +27,11 @@ We also use Global Average Pooling so that we get the mean of each color, somewh
 
 # Base model
 The model uses a base model called MobileV2, trained off of more than 1.4 million images. This is heavily useful because training a model from scratch takes a lot of time and still isn't that accurate. MobileV2 definitely improved its time and accuracy, but the accuracy and loss got really weird at the end. So, to fix this we did something called fine tuning.
-# Our previous loss graph: 
-<img width="556" height="419" alt="image" src="https://github.com/user-attachments/assets/fa7e5f6b-075d-46c0-8793-ba34bb2acdf3" />
-
 
 # fine tuning
 When I first uploaded the base model, we froze each layer, meaning that I made sure the base model was untrainable. But, this built a wall for how far the accuracy could actually go. So, I figured out how many of the layers were the lower level feature maps (18) because I don't want to waste time retraining the line and edge detector, due to the fact they are found in every image so the detector would already be good. So, we froze those layers and started training only the part of objects and object detectors for a more accurate model. This is called fine-tuning.
 
-# Our new loss chart (Yes, I ran for more epochs.)
+# Loss chart
 <img width="693" height="506" alt="image" src="https://github.com/user-attachments/assets/a3c01fcf-cef8-4155-834c-08c8bfdecb97" />
 
 
