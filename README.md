@@ -34,7 +34,8 @@ The model uses a base model called MobileV2, trained off of more than 1.4 millio
 When I first uploaded the base model, we froze each layer, meaning that I made sure the base model was untrainable. But, this built a wall for how far the accuracy could actually go. So, I figured out how many of the layers were the lower level feature maps (18) because I don't want to waste time retraining the line and edge detector, due to the fact they are found in every image so the detector would already be good. So, we froze those layers and started training only the part of objects and object detectors for a more accurate model. This is called fine-tuning.
 
 # Our new loss chart (Yes, I ran for more epochs.)
-<img src="blob:chrome-untrusted://media-app/22b53570-d475-4d74-ba6f-5d5ca10966e2" alt="Screenshot 2026-07-27 1.23.50 PM.png"/><img width="683" height="512" alt="image" src="https://github.com/user-attachments/assets/29291d12-fe85-4cf8-8672-b31009082332" />
+<img width="559" height="418" alt="image" src="https://github.com/user-attachments/assets/6bd9527c-fa1a-4470-b109-b06f6dec903d" />
+
 
 # Application
 ## Layout
